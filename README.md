@@ -19,3 +19,7 @@ In this code, the verifier creates a new transcript with the initial state of b"
 The verifier then passes this mutable reference to the verify_single function, which uses it to check the validity of the range proof. By using the same transcript as the prover, the verifier can be sure that the challenge used in the proof was generated randomly and independently of the prover's commitment.
 
 It's important to note that the transcript must be kept secret and not shared with anyone else, as it contains the random challenges used in the proof.
+
+
+How to run:
+Clone this repo and type "cargo run" on your terminal
