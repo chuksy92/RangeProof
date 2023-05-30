@@ -1,7 +1,11 @@
-# RangeProof
+# RangeProof 
+
+this code was originated by the dalek-cryptography [https://github.com/dalek-cryptography/bulletproofs]
 
 This is Rust code that generates and verifies a range proof using the Bulletproofs library. 
 Range proofs are a way to prove that a secret value falls within a certain range, without revealing the actual value.
+
+
 
 The generate_range_proof function takes in a secret value as a 64-bit unsigned integer, creates a Pedersen commitment to that value, and then generates a range proof for that commitment using Bulletproofs. The range proof has 32 bits of precision, meaning it can prove that the value falls within a range of $[0, 2^{32})$. 
 The function returns the range proof and the compressed commitment.
